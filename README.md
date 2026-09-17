@@ -199,7 +199,7 @@ _ZNSt8__detail30__integer_to_chars_is_unsignedIyEE:
 	.linkonce	discard
 .refptr._ZSt3cin:
 	.quad	_ZSt3cin
-
+```
 
 ### Первый уровень:
 
@@ -245,9 +245,10 @@ main:
 	.linkonce	discard
 .refptr._ZSt3cin:
 	.quad	_ZSt3cin
-
+```
 ### Второй уровень:
-	.file	"main.cpp"
+```assembly
+    .file	"main.cpp"
 	.text
 	.section	.text.startup,"x"
 	.p2align 4
@@ -284,7 +285,7 @@ main:
 	.linkonce	discard
 .refptr._ZSt3cin:
 	.quad	_ZSt3cin
-
+```
 Компилятор понимает, что цикл for (int i=0; i<123; i++) s += x; математически эквивалентен s = x * 123.
 
 
