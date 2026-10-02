@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "main",
+      "request": "launch",
+      "mainClass": "main",
+      "projectName": "lab03_a3775d97"
+    },
+    {
+      "type": "java",
       "name": "m3",
       "request": "launch",
       "mainClass": "m3",
